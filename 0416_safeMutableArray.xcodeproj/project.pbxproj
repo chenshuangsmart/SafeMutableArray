@@ -15,6 +15,9 @@
 		40494F96208430D300F88A8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494F95208430D300F88A8B /* main.m */; };
 		40494FA0208430D300F88A8B /* _416_safeMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494F9F208430D300F88A8B /* _416_safeMutableArrayTests.m */; };
 		40494FAB208430D300F88A8B /* _416_safeMutableArrayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494FAA208430D300F88A8B /* _416_safeMutableArrayUITests.m */; };
+		40494FBA2084317600F88A8B /* SyncMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494FB92084317600F88A8B /* SyncMutableArray.m */; };
+		40494FBD2084319500F88A8B /* BGSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494FBC2084319500F88A8B /* BGSafeMutableArray.m */; };
+		40494FC0208432F900F88A8B /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 40494FBE208432F900F88A8B /* NSArray+SafeAccess.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		40494FA6208430D300F88A8B /* 0416_safeMutableArrayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 0416_safeMutableArrayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40494FAA208430D300F88A8B /* _416_safeMutableArrayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _416_safeMutableArrayUITests.m; sourceTree = "<group>"; };
 		40494FAC208430D300F88A8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40494FB82084317600F88A8B /* SyncMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncMutableArray.h; sourceTree = "<group>"; };
+		40494FB92084317600F88A8B /* SyncMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncMutableArray.m; sourceTree = "<group>"; };
+		40494FBB2084319500F88A8B /* BGSafeMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGSafeMutableArray.h; sourceTree = "<group>"; };
+		40494FBC2084319500F88A8B /* BGSafeMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGSafeMutableArray.m; sourceTree = "<group>"; };
+		40494FBE208432F900F88A8B /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
+		40494FBF208432F900F88A8B /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,12 @@
 		40494F85208430D300F88A8B /* 0416_safeMutableArray */ = {
 			isa = PBXGroup;
 			children = (
+				40494FBF208432F900F88A8B /* NSArray+SafeAccess.h */,
+				40494FBE208432F900F88A8B /* NSArray+SafeAccess.m */,
+				40494FB82084317600F88A8B /* SyncMutableArray.h */,
+				40494FB92084317600F88A8B /* SyncMutableArray.m */,
+				40494FBB2084319500F88A8B /* BGSafeMutableArray.h */,
+				40494FBC2084319500F88A8B /* BGSafeMutableArray.m */,
 				40494F86208430D300F88A8B /* AppDelegate.h */,
 				40494F87208430D300F88A8B /* AppDelegate.m */,
 				40494F89208430D300F88A8B /* ViewController.h */,
@@ -268,6 +283,9 @@
 				40494F8B208430D300F88A8B /* ViewController.m in Sources */,
 				40494F96208430D300F88A8B /* main.m in Sources */,
 				40494F88208430D300F88A8B /* AppDelegate.m in Sources */,
+				40494FC0208432F900F88A8B /* NSArray+SafeAccess.m in Sources */,
+				40494FBA2084317600F88A8B /* SyncMutableArray.m in Sources */,
+				40494FBD2084319500F88A8B /* BGSafeMutableArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
