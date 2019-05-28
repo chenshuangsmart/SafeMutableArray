@@ -228,8 +228,11 @@
     return [self safeObjectAtIndex:index];
 }
 
+static int num = 0;
+
 - (void)safeAddObject:(id)anObject
 {
+    NSLog(@"input count = %d",++num);   //num 全局变量
     if (!anObject)
     {
         return;

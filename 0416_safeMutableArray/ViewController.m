@@ -22,7 +22,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
 //    [self bgSafeMutableArray];
-    [self syncMutableArray];
+//    [self syncMutableArray];
+    [self syncMutableArrayAdd];
 }
 
 - (void)bgSafeMutableArray {
@@ -64,6 +65,12 @@
     NSDate *endDate = [[NSDate alloc] init];
     double time = [endDate timeIntervalSince1970] - [startDate timeIntervalSince1970];
     NSLog(@"执行时间:%f",time);
+}
+
+- (void)syncMutableArrayAdd {
+    NSMutableArray *safeArr = [[NSMutableArray alloc] init];
+    NSString *str = @"123";
+    [safeArr addObject:str];//只做一个简单的插入nil测试，发现safeAddObject 方法调用了900多次
 }
 
 - (void)didReceiveMemoryWarning {
